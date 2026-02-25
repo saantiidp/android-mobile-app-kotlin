@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "876423713500",
+    "firebase_url": "https://expomanager-c26b9-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "expomanager-c26b9",
+    "storage_bucket": "expomanager-c26b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876423713500:android:683073dc5a75869af45a19",
+        "android_client_info": {
+          "package_name": "com.example.expomanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo04plHQSy0ia3RVcSKVqZ9WrJtYKSBRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
