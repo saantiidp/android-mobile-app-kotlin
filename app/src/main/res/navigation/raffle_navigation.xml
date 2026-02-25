@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/raffle_navigation"
+    app:startDestination="@id/raffleMainFragment">
+
+    <fragment
+        android:id="@+id/raffleMainFragment"
+        android:name="com.example.expomanager.RaffleMainFragment"
+        android:label="RaffleMainFragment"
+        tools:layout="@layout/fragment_raffle_main">
+        <action
+            android:id="@+id/action_raffleMainFragment_to_raffleSecondFragment"
+            app:destination="@id/raffleSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/raffleSecondFragment"
+        android:name="com.example.expomanager.RaffleSecondFragment"
+        android:label="RaffleSecondFragment"
+        tools:layout="@layout/fragment_raffle_second"/>
+</navigation>

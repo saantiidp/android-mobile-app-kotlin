@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExpoManager</string>
+    <string name="welcome_text">Hola, Bienvenido a ExpoManager</string>
+    <string name="button_home">Inicio</string>
+    <string name="button_search">Búsqueda</string>
+    <string name="select_date">Fecha seleccionada</string>
+    <string name="subtitle_text">Pulse para descubrir grandes eventos</string>
+</resources>

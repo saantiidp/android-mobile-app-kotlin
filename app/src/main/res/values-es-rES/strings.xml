@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_textview_expomanager">ExpoManager</string>
+    <string name="button_see_details">Ver detalles</string>
+    <string name="description">Descripción</string>
+    <string name="calendar">Calendario</string>
+    <string name="location">Ubicación</string>
+    <string name="event_text">Información del evento:</string>
+    <string name="calendar_text_init"><![CDATA[Calendario y Fechas del evento]]></string>
+    <string name="button_back_to_events">Volver a Eventos</string>
+    <string name="button_back_to_event_selected">Volver al evento</string>
+    <string name="button_buy_tickets">Comprar Entradas</string>
+    <string name="raffleTitle">Sorteo</string>
+    <string name="participate_raffle">Participar</string>
+    <string name="check_number_raffle">Comprobar Número</string>
+    <string name="raffle_msg_info">Resultado del Sorteo</string>
+    <string name="raffle_winner_msg">Felicidades, abajo tienes el código de descuento para tu siguiente compra de entradas</string>
+    <string name="raffle_loser_msg">Lo siento, buena suerte la próxima vez</string>
+    <string name="ticketTitle">Comprar entradas</string>
+    <string name="ticketsNumber">Número de entradas</string>
+    <string name="button_confirm_purchase">Confirmar compra</string>
+    <string name="buy_tickets_correctMSG">Tu compra se ha realizado correctamente</string>
+    <string name="login_text">Inicio Sesión</string>
+    <string name="email_text">Correo Electrónico</string>
+    <string name="password_text">Contraseña</string>
+    <string name="logout_menu_title">Logout</string>
+
+
+</resources>

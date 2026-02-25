@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ExpoManager</string>
+    <string name="welcome_text">Hi, Welcome to ExpoManager</string>
+    <string name="button_home">Home</string>
+    <string name="button_search">Search</string>
+    <string name="select_date">Date Selected</string>
+    <string name="subtitle_text">Click to discover great events</string>
+    <string name="title_textview_expomanager">ExpoManager</string>
+    <string name="button_see_details">See details</string>
+    <string name="description">Description</string>
+    <string name="calendar">Calendar</string>
+    <string name="location">Location</string>
+    <string name="event_text">Event Information:</string>
+    <string name="calendar_text_init"><![CDATA[Calendar && Event dates]]></string>
+    <string name="button_back_to_events">Return to Events</string>Volver a Eventos
+    <string name="button_back_to_event_selected">Back to the Event</string>
+    <string name="button_buy_tickets">Buy Tickets</string>
+    <string name="raffleTitle">Raffle</string>
+    <string name="participate_raffle">Participate</string>
+    <string name="check_number_raffle">Check Number</string>
+    <string name="raffle_msg_info">Raffle Result</string>
+    <string name="raffle_winner_msg">Congratulations, below is the discount code for your next ticket purchase</string>
+    <string name="raffle_loser_msg">Sorry, good luck next time!</string>
+    <string name="ticketTitle">Buy Tickets</string>
+    <string name="ticketsNumber">Number of tickets</string>
+    <string name="button_confirm_purchase">Confirm purchase</string>
+    <string name="buy_tickets_correctMSG">Your purchase was successful</string>
+    <string name="login_text">Login</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="logout_menu_title">Logout</string>
+
+</resources>

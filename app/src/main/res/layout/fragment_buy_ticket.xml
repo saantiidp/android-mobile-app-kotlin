@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#82BED9">
+
+        <ImageView
+            android:id="@+id/ticketImage"
+            android:layout_width="141dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="40dp"
+            android:visibility="visible"
+            android:src="@drawable/ticket"
+            tools:src="@drawable/ticket" />
+
+        <TextView
+            android:id="@+id/ticketTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/ticketTitle"
+            android:textStyle="italic"
+            android:textColor="@color/design_default_color_surface"
+            android:textSize="35dp" />
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="90dp"
+            android:layout_below="@id/ticketImage"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="Nombre del evento"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="278dp"
+            android:layout_height="183dp"
+            android:layout_below="@id/eventName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ticketCountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="150dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/eventImage"
+            android:hint="@string/ticketsNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ticketCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/confirmButton"
+            android:visibility="gone"
+            android:shadowColor="#3BB81D"
+            tools:src="@drawable/ic_launcher_background"/>
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/ticketCountLayout"
+            android:text="@string/button_confirm_purchase" />
+
+        <ImageView
+            android:id="@+id/ticketBuyCorrectImage"
+            android:layout_width="189dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/ticketCountLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-1dp"
+            android:src="@drawable/ticket_buy_correct"
+            android:visibility="invisible"
+            tools:src="@drawable/ticket_buy_correct" />
+        <TextView
+            android:id="@+id/ticketBuyCorrectText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ticketBuyCorrectImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="80dp"
+            android:visibility="invisible"
+            android:text="@string/buy_tickets_correctMSG"
+            android:textColor="@color/design_default_color_surface"
+            android:textSize="20dp"/>
+
+
+        <ImageView
+            android:id="@+id/logos_forma_pago"
+            android:layout_width="266dp"
+            android:layout_height="68dp"
+            android:layout_below="@id/confirmButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="36dp"
+            android:src="@drawable/imagen_plataformas_pago"
+            android:visibility="visible"
+            tools:src="@drawable/imagen_plataformas_pago" />
+
+        <TextView
+            android:id="@+id/separador"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="70dp"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_back_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:textSize="15dp"
+            android:text="@string/button_back_to_event_selected"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </RelativeLayout>
+</layout>

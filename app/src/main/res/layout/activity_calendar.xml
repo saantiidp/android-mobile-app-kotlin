@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Layout como nodo raíz -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!--Import para usar el tipo ViewModel del calendario-->
+        <import type="android.view.View"/>
+        <variable
+            name="calendarViewModel"
+            type="com.example.expomanager.CalendarViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#82BED9">
+
+        <!-- CalendarView -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="397dp"
+            android:layout_height="299dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="191dp"
+            android:layout_marginEnd="1dp"
+            android:showWeekNumber="false" />
+
+        <!-- TextView para mostrar la fecha seleccionada -->
+        <TextView
+            android:id="@+id/calendar_text_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/calendar_text_init"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{calendarViewModel.selectedDate}"
+            android:layout_below="@id/calendarView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textViewAvailableDates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{calendarViewModel.eventDate}"
+            android:textSize="15dp"
+            android:layout_below="@id/textViewSelectedDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+        <!-- Separador en la parte inferior -->
+        <TextView
+            android:id="@+id/separador"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="70dp"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_back_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:textSize="15dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/button_back_to_event_selected" />
+
+    </RelativeLayout>
+</layout>

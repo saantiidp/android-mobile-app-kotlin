@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6A97AB">
+
+        <TextView
+            android:id="@+id/title_init_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="96dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/subtitle_text"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/title_icon_app"
+            android:layout_width="285dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="56dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagen_1_app"
+            android:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/title_subtitle_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_init_app"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:text="@string/title_textview_expomanager"
+            app:cornerRadius="16dp"
+            app:iconPadding="8dp"
+            android:textSize="14sp"
+            style="@style/Widget.MaterialComponents.Button" />
+
+    </RelativeLayout>
+</layout>
